@@ -1,0 +1,82 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Train Schedule</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+</head>
+
+<body>
+    <h1>
+        <blockquote>
+            <p>The trains always arrive at your station. The question is which one to take? </p>
+            <cite>- Mehmet Murat ildan</cite>
+        </blockquote>
+    </h1>
+
+    <div class="container p-2">
+        <div class="panel">
+            <div class="panel-header">
+                <div class="panel-title mt-2 text-center">Find A Train</i></div>
+            </div>
+            <div class="panel-body">
+
+                <div class="form-group mr-2 mt-2 text-large">
+                    <label class="form-label" for="trainname">Train Name</label>
+                    <input class="form-input" type="text" id="trainname" placeholder="Name">
+                </div>
+                <div class="form-group mr-2 mt-2 text-large">
+                    <label class="form-label" for="destination">Destination</label>
+                    <input class="form-input" type="text" id="destination" placeholder="Destination">
+                </div>
+                <div class="form-group mr-2 mt-2 text-large">
+                    <label class="form-label" for="traintime">Train Time</label>
+                    <input class="form-input" type="text" id="traintime" placeholder="Train Time">
+                </div>
+                <div class="form-group mr-2 mt-2 text-large">
+                    <label class="form-label" for="frequency">Frequency</label>
+                    <input class="form-input" type="text" id="frequency" placeholder="Frequency">
+                </div>
+                <button class="btn btn-primary btn-sm mb-2 mt-2" id="select" type="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-2 p-2">
+        <div class="panel">
+            <div class="panel-header">
+                <div class="panel-title mt-2 text-center">Train Schedule</div>
+            </div>
+            <div class="panel-body">
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="text-large">Train Name</th>
+                            <th scope="col" class="text-large">Destination</th>
+                            <th scope="col" class="text-large">Next Arrival</th>
+                            <th scope="col" class="text-large">Frequency</th>
+                            <th scope="col" class="text-large">Minutes Away</th>
+                            <th scope="col" class="text-large"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+    <script src="assets/javascript/main.js"></script>
+
+</body>
+
+</html>

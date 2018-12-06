@@ -1,0 +1,56 @@
+body {
+    background-image: url("../images/trainbackground.jpg");
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 80px;
+    font-family: 'Marck Script', cursive;
+    text-shadow: 2px 2px 4px white;
+}
+
+blockquote {
+    padding: 0;
+    margin: 50px 40px;
+    border-left: 0;
+}
+
+p {
+    margin-top: -20px;
+}
+
+cite {
+    margin-left: 1250px;
+    font-size: 48px;
+}
+
+#select {
+    width: 15%;
+    font-size: 20px;
+}
+
+.panel-header {
+   
+    background-color: rgb(148, 147, 147);
+    font-size: 68px;
+}
+
+.container {
+    width: 28%;
+    margin-left: 20px;
+    background-color: white;
+    float: left;
+}
+
+.container-2 {
+    width: 68%;
+    margin-left: 40px;
+    background-color: white;
+    float: left;
+}
+
+.removebutton {
+    margin-top: 15px;
+}
