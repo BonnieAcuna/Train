@@ -24,30 +24,28 @@ $("#select").on('click', function(event) {
     console.log(trainTime);
     console.log(frequency);
 	
-	//localStorage.clear("trains");
-	//do calculations here
+	
 	var nextArrival;
 	var minutesAway;
-	//trainTime is first time train goes
-	//frequency is the interval in which is arrives
+	
 	var timeArray = trainTime.split(':');
 	var newTrainTime = moment().hours(timeArray[0]).minutes(timeArray[1]);
 	var maxMoment = moment.max(moment(), newTrainTime);
 	
-	 // If the first train is later than the current time, sent arrival to the first train time
+	
 	 if (maxMoment === newTrainTime) {
 		nextArrival = newTrainTime.format("hh:mm A");
 		minutesAway = newTrainTime.diff(moment(), "minutes");
-		console.log("equal")
+		
 	  } else {
 	
-		console.log('not equal')
+		
 		var diffTimes = moment().diff(newTrainTime, "minutes");
 		var remainder = diffTimes % frequency;
 		minutesAway = frequency - remainder;
 		
 		nextArrival = moment().add(minutesAway, "m").format("hh:mm A");
-		console.log(nextArrival)
+		
 
 	  }
 	  console.log("minutesAway:", minutesAway);
@@ -106,7 +104,7 @@ $(document).on('click', ".removebutton", function () {
 	trainData.splice(index, 1);
 	localStorage.setItem("trains", JSON.stringify(trainData));
 	location.reload();
-	// removeRow.remove();
+	
 });
 
 
